@@ -1,6 +1,6 @@
-# 如果是基于发布目录来构建镜像使用此Dockerfile
+# 濡傛灉鏄熀浜庡彂甯冪洰褰曟潵鏋勫缓闀滃儚浣跨敤姝ockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
 COPY . /app
 WORKDIR /app
-EXPOSE 80
+EXPOSE 8081
 ENTRYPOINT ["dotnet", "AlibabaCloudContainerRegistrySourceCode.dll"]
