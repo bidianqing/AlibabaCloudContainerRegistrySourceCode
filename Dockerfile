@@ -4,6 +4,6 @@ COPY . /src
 WORKDIR /src/AlibabaCloudContainerRegistrySourceCode
 RUN dotnet publish -c Release -o /app
 WORKDIR /app
-ENV ASPNETCORE_URLS=http://+:8081
-EXPOSE 8081
+ENV ASPNETCORE_URLS=http://+:80
+EXPOSE 80
 ENTRYPOINT ["dotnet", "AlibabaCloudContainerRegistrySourceCode.dll"]
